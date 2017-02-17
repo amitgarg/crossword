@@ -1,0 +1,21 @@
+{
+  "sizeX": 9,
+  "sizeY": 9,
+  "across": [
+    {"number": 1, "x": 1, "y":1, "desc": "row1", "length":9},
+    {"number": 5, "x": 1, "y":3, "desc": "row2", "length":4},
+    {"number": 7, "x": 6, "y":3, "desc": "row3", "length":4},
+    {"number": 8, "x": 3, "y":5, "desc": "row4", "length":5},
+    {"number": 11, "x": 1, "y":7, "desc": "row5", "length":4},
+    {"number": 12, "x": 6, "y":7, "desc": "row6", "length":4},
+    {"number": 13, "x": 1, "y":9, "desc": "row7", "length":9}
+  ],
+  "down": [
+    {"number": 2, "x": 2, "y":1, "desc": "col1", "length":4},
+    {"number": 3, "x": 6, "y":1, "desc": "col2", "length":7},
+    {"number": 4, "x": 8, "y":1, "desc": "col3", "length":4},
+    {"number": 6, "x": 4, "y":3, "desc": "col4", "length":7},
+    {"number": 9, "x": 2, "y":6, "desc": "col5", "length":4},
+    {"number": 10, "x": 8, "y":6, "desc": "col6", "length":4}
+  ]
+}

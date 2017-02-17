@@ -66,10 +66,15 @@ gulp.task('clean:dist', function(){
   return del.sync('dist');
 })
 
+gulp.task('data', function(){
+  return gulp.src('app/data/**/*')
+    .pipe(gulp.dest('dist/data'))
+})
+
 //--------------------  END   --------------------------
 
 gulp.task('build',function(callback){
-  runSequence('clean:dist','sass', 'browserify', 'useref', callback)
+  runSequence('clean:dist','sass', 'browserify', 'useref','data', callback)
 })
 
 //---- Task to be executed with only gulp command  ----
