@@ -5,33 +5,8 @@ var myapp = angular.module('myApp', []);
 
 myapp.factory('DataService', function ($http) {
   var service = {};
-
-  // var data = {
-  //     sizeX: 9,
-  //     sizeY: 9,
-  //     across: [
-  //       {number: 1, x: 1, y:1, desc: "row1", length:9},
-  //       {number: 5, x: 1, y:3, desc: "row2", length:4},
-  //       {number: 7, x: 6, y:3, desc: "row3", length:4},
-  //       {number: 8, x: 3, y:5, desc: "row4", length:5},
-  //       {number: 11, x: 1, y:7, desc: "row5", length:4},
-  //       {number: 12, x: 6, y:7, desc: "row6", length:4},
-  //       {number: 13, x: 1, y:9, desc: "row7", length:9}
-  //     ],
-  //     down: [
-  //       {number: 2, x: 2, y:1, desc: "col1", length:4},
-  //       {number: 3, x: 6, y:1, desc: "col2", length:7},
-  //       {number: 4, x: 8, y:1, desc: "col3", length:4},
-  //       {number: 6, x: 4, y:3, desc: "col4", length:7},
-  //       {number: 9, x: 2, y:6, desc: "col5", length:4},
-  //       {number: 10, x: 8, y:6, desc: "col6", length:4}
-  //     ]  
-  //   };
-  // service.query = function () {
-  //   return data;
-  // };  
-  service.query = function(){
-    return $http.get('data/data.json');       
+  service.query = function () {
+    return $http.get('data/data.json');
   }
   return service;
 });
@@ -47,6 +22,7 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
         empty: true
       };
     }
+
     data.across.forEach(function (info) {
       var xIndex = info.x - 1;
       var yIndex = info.y - 1;
@@ -58,6 +34,7 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
         cell.across = info.number;
       }
     });
+    
     data.down.forEach(function (info) {
       var xIndex = info.x - 1;
       var yIndex = info.y - 1;
@@ -85,7 +62,7 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
     }
   });
 });
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_e1ca2060.js","/")
+}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_93dda5d6.js","/")
 },{"angular":3,"buffer":5,"e/U+97":7}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /**

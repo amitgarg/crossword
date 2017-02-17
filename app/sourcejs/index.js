@@ -20,6 +20,7 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
         empty: true
       };
     }
+
     data.across.forEach(function (info) {
       var xIndex = info.x - 1;
       var yIndex = info.y - 1;
@@ -31,6 +32,7 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
         cell.across = info.number;
       }
     });
+    
     data.down.forEach(function (info) {
       var xIndex = info.x - 1;
       var yIndex = info.y - 1;
