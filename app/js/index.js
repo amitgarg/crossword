@@ -76,10 +76,10 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
     width: cellWidth
   };  
   $scope.gridStyle = {
-    height: (50.00 * data.sizeY / data.sizeX) + 'vw'
+    height: (40.00 * data.sizeY / data.sizeX) + 'vw'
   }
 });
-}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_ba9c50dc.js","/")
+}).call(this,require("e/U+97"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_2acfa500.js","/")
 },{"angular":3,"buffer":5,"e/U+97":7}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /**

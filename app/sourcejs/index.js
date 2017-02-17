@@ -74,6 +74,6 @@ myapp.controller("MainCtrl", function ($scope, DataService) {
     width: cellWidth
   };  
   $scope.gridStyle = {
-    height: (50.00 * data.sizeY / data.sizeX) + 'vw'
+    height: (40.00 * data.sizeY / data.sizeX) + 'vw'
   }
 });

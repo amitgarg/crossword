@@ -9,9 +9,9 @@ div, input {
   box-sizing: border-box; }
 
 #container {
-  padding-top: 10vw;
+  padding-top: 5vw;
   height: 100%;
-  font-size: 7vw; }
+  font-size: 5vw; }
 
 #crossword-box {
   width: 70%;
@@ -35,7 +35,7 @@ div, input {
     list-style: none; }
 
 #grid {
-  width: 50vw;
+  width: 40vw;
   border: solid black 1px;
   margin: auto; }
 
@@ -46,7 +46,7 @@ div, input {
   .grid-cell span {
     opacity: .9;
     position: absolute;
-    font-size: .25em;
+    font-size: .3em;
     left: 0; }
   .grid-cell input {
     border: 0;
