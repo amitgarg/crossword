@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  ng-app="myApp">
+  <head>
+    <link rel="stylesheet" href="css/application.min.css">
+  </head>
+  <body>
+    <div id="container" ng-controller="MainCtrl">
+      <div id="crossword-box">        
+        <div id="grid" ng-style="gridStyle">
+          <div ng-repeat="cell in gridData track by $index" class="grid-cell" ng-class="{'disabled' : cell.empty}" ng-style="cellStyle">
+            <span ng-if="!cell.empty">{{cell.number}}</span>
+            <input type="text" size="1" maxlength="1" ng-if="!cell.empty" ng-model="cell.value" />
+          </div>          
+        </div>
+      </div>
+      <div id="hint-box">
+        <h4>ACROSS</h4>
+        <ul>
+          <li ng-repeat="hint in data.across">{{hint.number}}. {{hint.desc}} ({{hint.length}})
+        </ul>
+        <h4>DOWN</h4>
+        <ul>
+          <li ng-repeat="hint in data.down">{{hint.number}}. {{hint.desc}} ({{hint.length}})
+        </ul>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
